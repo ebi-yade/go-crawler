@@ -4,7 +4,7 @@ vagrant-up:
 	vagrant up && \
 	cd ../src
 vagrant-reload:
-	cd ../vagrant && \	
+	cd ../vagrant && \
 	cp Vagrantfile.bak Vagrantfile && \
 	sed -i.bak -e "s/VmBoxNameHere/amzn2-$(PROJECT_NAME)/g" Vagrantfile && \
 	vagrant reload && \
